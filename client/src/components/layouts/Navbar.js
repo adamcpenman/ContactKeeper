@@ -9,11 +9,11 @@ const Navbar = ({ title, icon }) => {
   const contactContext = useContext(ContactContext);
 
   const { isAuthenticated, logout, user } = authContext;
-  const { clearContact } = contactContext;
+  const { clearContacts } = contactContext;
 
   const onLogout = () => {
     logout();
-    clearContact();
+    clearContacts();
   };
 
   const authLinks = (
